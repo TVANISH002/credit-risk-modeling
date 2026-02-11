@@ -239,10 +239,4 @@ streamlit run app/streamlit_app.py
 * Auto-retraining pipeline
 * Alerting system (Slack / Email)
 
----
-
-# 👨‍💻 Author
-
-Anish Tirumala Venkata
-M.S. Computer Science — University of Florida
 
