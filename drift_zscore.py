@@ -1,7 +1,6 @@
-# drift_zscore.py
-# ---------------------------------------
+
 # Z-Score Drift Detection (Production-friendly baseline)
-# ---------------------------------------
+
 
 from __future__ import annotations
 
@@ -17,9 +16,8 @@ except Exception:
     MLFLOW_AVAILABLE = False
 
 
-# -------------------------
 # 1) SAVE BASELINE STATS
-# -------------------------
+
 def save_baseline_stats(
     X_train: pd.DataFrame,
     baseline_path: str | Path = "artifacts/drift_baseline.json",
@@ -57,17 +55,14 @@ def save_baseline_stats(
     return baseline_path
 
 
-# -------------------------
 # 2) LOAD BASELINE STATS
-# -------------------------
+
 def load_baseline_stats(baseline_path: str | Path) -> dict:
     baseline_path = Path(baseline_path)
     return json.loads(baseline_path.read_text())
 
-
-# -------------------------
 # 3) DRIFT REPORT (Z-SCORE)
-# -------------------------
+
 def zscore_drift_report(
     X_new: pd.DataFrame,
     baseline: dict,
@@ -110,9 +105,8 @@ def zscore_drift_report(
     return df
 
 
-# -------------------------
 # 4) SAVE REPORT + OPTIONAL MLFLOW LOGGING
-# -------------------------
+
 def save_report(
     report_df: pd.DataFrame,
     out_path: str | Path = "artifacts/zscore_drift_report.csv"
