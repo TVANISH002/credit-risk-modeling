@@ -1,0 +1,15 @@
+pandas
+numpy
+matplotlib
+scikit-learn==1.7.2
+seaborn
+statsmodels
+XGBoost
+imbalanced-learn
+optuna
+streamlit
+fastapi
+uvicorn
+pytest
+httpx
+mlflow

@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+env/
+venv/
+
+# Pytest
+.pytest_cache/
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints/
+
+# Dataset
+dataset/
+data/
+*.csv
+
+# Model artifacts
+artifacts/
+*.joblib
+*.pkl
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Env
+.env
+
+# IDE
+.vscode/
