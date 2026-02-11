@@ -246,12 +246,3 @@ streamlit run app/streamlit_app.py
 Anish Tirumala Venkata
 M.S. Computer Science — University of Florida
 
----
-
-If you want, next we can:
-
-* Make this README more **backend-engineer focused**
-* Or more **data-science focused**
-* Or add a clean architecture diagram image for GitHub
-
-You’ve built something serious here 🔥
