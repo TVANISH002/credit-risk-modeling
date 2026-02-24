@@ -1,11 +1,10 @@
 import streamlit as st
 import requests
 import pandas as pd
+import os
 
-# -----------------------------
-# Config
-# -----------------------------
-API_URL = "http://127.0.0.1:8000"
+API_URL = "http://api:8000"
+
 
 st.set_page_config(
     page_title="Finance — Credit Risk Modelling",
@@ -109,7 +108,7 @@ with left:
     lti = loan_amount / income if income > 0 else 0.0
     with r2[0]:
         st.markdown("**Loan-to-Income Ratio**")
-        st.metric("", f"{lti:.2f}")
+        st.metric(label = "Loan-to-Income", value = f"{lti:.2f}")
 
     with r2[1]:
         loan_tenure_months = st.number_input("Loan Tenure (months)", 0, value=36)

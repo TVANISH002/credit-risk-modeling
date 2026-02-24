@@ -28,6 +28,6 @@ jobs:
         run: |
           python -c "import api.main; print('✅ api.main import OK')"
 
-      - name: Run unit tests (if you add later)
+      - name: Run unit tests (if added later)
         run: |
           if [ -d tests ]; then pytest -q; else echo "No tests folder yet ✅"; fi

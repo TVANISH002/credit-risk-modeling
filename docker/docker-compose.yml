@@ -1,0 +1,23 @@
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: docker/dockerfile.api
+    ports:
+      - "8000:8000"
+    volumes:
+    - ../data:/app/data
+    - ../artifacts:/app/artifacts    
+  
+
+  app:
+    build:
+      context: ..
+      dockerfile: docker/dockerfile.app
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+ 
+ 
+
