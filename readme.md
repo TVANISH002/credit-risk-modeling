@@ -232,7 +232,6 @@ streamlit run app/streamlit_app.py
 
 # 📌 Future Improvements
 
-* Docker containerization
 * Cloud storage for artifacts (S3/GCS)
 * MLflow Model Registry
 * Production database (PostgreSQL)
